@@ -1,0 +1,169 @@
+
+.navi{
+	background-color: #8b5c7e;
+}
+.navi ul li a{
+	color: white;
+}
+.sign{
+	background-color:#8b5c7e; 
+}
+.signp{
+	padding: 70px;
+
+}
+.signf{
+	font-family: script;
+}
+
+
+.team{
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	align-items: center;
+	background-color: #8b5c7e;;
+}
+.member{
+	padding-left: 500px;
+	align-items: center;
+	padding-top: 20px;
+
+}
+.member img{
+	border-radius: 90px;
+	-webkit-filter: brightness(50%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.member img:hover{
+	-webkit-filter: brightness(100%);
+
+	
+}
+.team h3{
+	padding-left: 400px;
+
+}
+.team p{
+	padding-left: 200px;
+	padding-top: 20px;
+}
+.brands{
+	padding: 30px;
+}
+.sponser{
+	padding-left: 600px;
+}
+footer{
+	background: #8b5c7e;
+    font-family: sans-serif;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #8b5c7e;
+    height: auto;
+    width: 100vw;
+
+    padding-top: 40px;
+    color: #F5F5DC;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #F5F5DC;
+}
+.socials{
+	list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background: #A52A2A;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-menu{
+  float: right;
+}
+
+.footer-menu ul{
+  display: flex;
+}
+
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Add some padding around the container. Align text centrally */
+.stats {
+  padding: 45px 50px;
+  text-align: center;
+}
+.stat {
+  display: inline-flex;
+  margin: 0 30px;
+  text-align: center;
+  width: 800px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Car Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+   <?php
+  require '../basics/nav.php'
+  ?>
+  <div class="container my-5 shadow rounded  bg-light">
+
+
+    <h3 class="text-center" style="font-size: 22px;"></h3>
+    <hr>
+
+        
+    <div class="table-responsive">
+      <table class="table table-hover my-3 py-3" id="datatable">
+        <thead style="background-color:black ;">
+          <tr style="color:white;">
+            <th>S No.</th>
+            <th>Agency</th>
+            <th>Model</th>
+            <th>Seats</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Action</th>
+            
+           
+
+              
+
+        
+            <!-- <th>Update</th> -->
+
+
+          </tr>
+        </thead>
+        <tbody style="background-color: white;">
+
+           <?php
+
+         
+
+            $query = "SELECT * FROM vehicles";
+          
+
+          $fire = mysqli_query($conn, $query);
+          if (mysqli_num_rows($fire) > 0) {
+              $a=0;
+            while ($user = mysqli_fetch_array($fire)){ ?>
+              <tr>
+                <td>
+                  <?php echo ++$a; ?>
+                </td>
+                <td>
+                  <?php echo $user['agency'] ?>
+                </td>
+                <td>
+                  <?php echo $user['model'] ?>
+                </td>
+                <td>
+                  <?php echo $user['seat'] ?>
+                </td>
+                
+                <td>
+                  <?php echo $user['price'] ?>
+                </td>
+
+                <td>
+                  <?php echo '<img class="img" src="data:image/jpg;base64,' . base64_encode($user['image']) . '"/>' ?>
+                </td>
+               
+                  <td>
+                    <a href="<?php $_SERVER['PHP_SELF'] ?>?del='<?php echo $user['user_id'] ?>'" class="btn btn-sm btn-danger">Delete</a>
+                  </td>
+                  
+
+</body>
+</html>

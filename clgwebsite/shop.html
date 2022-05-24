@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shop</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  margin-left: 50px;
+  margin-top: 60px;
+  float: left;
+  width: 28.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+     <div class="navi">
+	<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="shop.html">Shops</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Contacts</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Cart</a>
+  </li>
+</ul>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="fruit.jpg" alt="Jane" style="width:100%" height="300px">
+      <div class="container">
+        <h2>Fruit basket</h2>
+        <p class="title">big bazaar</p>
+        <p>Grap your fresh organic fruit on your door.</p>
+       
+        <p><a href="fruit.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="iphone.jpg" alt="Mike" style="width:100%" height="300px">
+      <div class="container">
+        <h2>IPhone</h2>
+        <p class="title">iphone</p>
+        <p>leave your impression in public by iphnoe 12 .</p>
+        
+        <p><a href="iphone.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="shoes-men.jpg" alt="John" style="width:100%" height="300px">
+      <div class="container">
+        <h2>Men's Shoes</h2>
+        <p class="title">Adidas</p>
+        <p>Make your first impression best.</p>
+       
+        <p><a href="shoes.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="peach-suit.jpg" alt="Jane" style="width:100%" height="300px">
+      <div class="container">
+        <h2>chudidaar</h2>
+        <p class="title">Adhya whole sale</p>
+        <p>Choose your favoirate dress for any ocassion.</p>
+        
+        <p><a href="cloth.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="wall-decore.jpeg" alt="Mike" style="width:100%" height="300px">
+      <div class="container">
+        <h2>Wall Hangings</h2>
+        <p class="title">Art Decorators</p>
+        <p>Decorate your home as a temple.</p>
+       
+        <p><a href="wall.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="watch-wo.jpg" alt="John" style="width:100%" height="300px">
+      <div class="container">
+        <h2>Wrist watch</h2>
+        <p class="title">Alpha Timers</p>
+        <p>Be an early bird every time.</p>
+       
+        <p><a href="Watch.html"><button class="button">View Product</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+	<div class="footer-content">
+    <!--add all information -->
+    <h3>FlipClap</h3>
+    <p>FlipClap is a website where you can buy your daily requirments of cloths, footweares, accessories , groceries, and home Decore at lowest prices</p>
+    <ul class="socials">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+ </ul>
+</div>
+<div class="footer-bottom">
+   <!-- add all information -->
+   <p>copyright &copy;2022 <a href="#">Cooldeveloper</a>  </p>
+
+   <div class="footer-menu">
+ <ul class="f-menu">
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Blog</a></li>
+ </ul>
+</div>
+</div>
+</footer>
+</body>
+</html>
